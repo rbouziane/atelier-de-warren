@@ -1,5 +1,7 @@
-<template>
-  <div>
-    <h1>Welcome to home page</h1>
-  </div>
-</template>
+<template></template>
+
+<script setup lang="ts">
+const router = useRouter()
+
+router.replace('/home')
+</script>
