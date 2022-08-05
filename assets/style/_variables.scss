@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+// Neutrals
+$neutrals-white: #ffffff;
+$neutrals-black: #1b1d22;
+
+@function pxToRem($valPX) {
+  $res: math.div($valPX, 16) + rem;
+  @return $res;
+}
+
+// Bootstrap
+@import '@/node_modules/bootstrap/scss/functions';
+@import '@/node_modules/bootstrap/scss/variables';
+@import '@/node_modules/bootstrap/scss/mixins';
+
+// TODO: See if this import is necessary
+@import '@/node_modules/bootstrap/scss/maps';
